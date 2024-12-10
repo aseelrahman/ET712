@@ -6,12 +6,13 @@ const Navbars = function(){
         <>
         <nav className="navbar">
             <div>
-                <Link>QCC</Link>
+                <p>Must-Visit USA</p>
             </div>
             <div className="btngroup">
                 <button><Link to="/">Home</Link></button>
-                <button><Link to="/about">About Us</Link></button>
-                <button><Link to="/contact">Contact Us</Link></button>
+                <button><Link to="/newyork">New York</Link></button>
+                <button><Link to="/california">California</Link></button>
+                <button><Link to="/florida">Florida</Link></button>
             </div>
         </nav>
         </>
