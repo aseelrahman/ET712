@@ -1,152 +1,212 @@
-*{box-sizing: border-box;}
-html{scroll-behavior: smooth;}
-img{width: 100%; display: block;}
-.imgcontainer{
-  width: 80%;
-  margin: 5em auto;
-  box-shadow: 1px 1px 5px gray;
+/* General Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-.title{text-align: center; margin: 3em;}
-/* NAVBARS */
-.navbar{
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
+html {
+  scroll-behavior: smooth;
 }
-.navbar div:nth-child(1){
-  width: 30%;
-}
-.navbar div:nth-child(2){
-  width: 70%;
-}
-.btngroup{
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
+img {
+  width: 100%;
+  display: block;
 }
 
-.btngroup button{
+/* Title Styling */
+.title {
+  text-align: center;
+  margin: 2em 0;
+  font-size: 2em;
+  color: #333;
+}
+.intro {
+  text-align: center;
+  margin: 0 auto 2em auto;
+  max-width: 800px;
+  font-size: 1.1em;
+  color: #555;
+  line-height: 1.6;
+}
+/* NAVBARS */
+.navbar {
+  display: flex;
+  justify-content: center;
+}
+.navbar div:nth-child(1) {
+  width: 30%;
+}
+.navbar div:nth-child(2) {
+  width: 70%;
+}
+
+.btngroup {
+  display: flex;
+  justify-content: center;
+}
+.btngroup button {
   width: 33%;
   text-align: center;
   padding: 1em;
   border: none;
+  background-color: #888;
+  color: white;
+  transition: background-color 0.2s ease-in-out;
 }
-.btngroup button Link{
-  color: whitesmoke;
-}
-.btngroup button:hover{
-  text-decoration: none;
-  font-weight: bolder;
+.btngroup button:hover {
+  font-weight: bold;
   background-color: crimson;
   cursor: pointer;
 }
 
-/* CARD - COMMENTS.JS*/
-.card{
-  padding: 1em;
-  width: 90%;
-  text-align: center;
-  margin: 1em auto;
-  border-radius: 10px;
-  transition: ease-in-out 100ms;
-
-}
-
-.content{
-  font-size: 1.1em;
-  font-weight: 900;
-}
-.metadata{
-  font-size: 0.8em;
-  color: #888;
-}
-.container{
-  display: flex;
-  justify-content: center;
-  flex-wrap: nowrap;
-}
-
-/* USER_FEEDBACK.JS */
-.feedbackcard{
-  width: 300px;
-  border: #888 solid 1px;
-  border-radius: 10px;
-  text-align: center;
-  overflow: hidden;
-}
-
-.cardfooter{
-  background-color: #888;
-  padding: 0.2em;
-  color: aliceblue;
-}
-
-.feedbackcontainer:hover{
-  box-shadow: 0px 0px 10px 1px gray;
-  transform: scale(1.01);
-  overflow: hidden;
-  border-radius: 10px;
-}
-.feedbackcontainer{
-  margin: 1%;
-}
-.cardfooter:hover{
-  cursor: pointer;
-  font-weight: bolder;
-}
-
-/* MODAL WINDOW */
-.modalwindow{
-  background-color: rgba(200, 200, 200, 0.7);
-  position: fixed;
-  top: 0%; bottom: 0%; right: 0%; left: 0%;
-  display: none;
-}
-.modalcontent{
-  width: 500px;
-  height: 300px;
-  margin: 100px auto;
-  background-color: white;
-}
-.modalheader{
-  border-bottom: ridge 1px lightgray;
+/* CARD CONTAINER */
+.container {
   display: flex;
   flex-wrap: wrap;
-  padding: 0.1em 2em;
-  color: #888;
-  font-weight: bolder;
-  font-size: 1.1em;
+  justify-content: center;
+  gap: 2em;
+  padding: 1em;
 }
-.closemodal{
-  margin-left: auto;
+.card-link {
+  text-decoration: none;
+  color: inherit;
 }
-.closemodal:hover{
-  cursor: pointer;
-  color: crimson;
-}
-.description_comment{
-  margin-left: 2.5em;
-  margin-top: -20px;
-  color: crimson;
-  font-size: 0.7em;
-}
-.commentarea{
-  margin: 2em;
-  padding: 10px 15px;
-  border-radius: 5px;
-  border: solid1px lightgray;
-  width: 90%;
-}
-.btnpostfeedback{
-  margin: 2em;
-  background-color: #888;
+
+/* CARD STYLING */
+.feedbackcard {
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  overflow: hidden;
   text-align: center;
-  border: none;
-  padding: 10px 20px;
-  color: white;
-  border-radius: 5px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.btnpostfeedback:hover{
-  background-color: crimson;
+
+.feedbackcard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.content {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 0.5em 0;
+}
+.feedbackcard img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.content p {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 0.5em 0;
+}
+
+.description {
+  color: #555;
+  font-size: 1em;
+  line-height: 1.4;
+  margin: 0.5em 1em;
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Limit description to 2 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cardfooter {
+  background-color: #0078D7;
+  color: white;
+  padding: 0.5em;
+  font-weight: bold;
   cursor: pointer;
+}
+.cardfooter:hover {
+  background-color: #005999;
+}
+/* MODAL WINDOW */
+.modalwindow {
+  background-color: rgba(0, 0, 0, 0.7); /* Dim background */
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modalcontent {
+  width: 90%;
+  max-width: 600px;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.modalheader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  background-color: #f5f5f5;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.closemodal {
+  font-size: 1.5em;
+  color: #888;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+.closemodal:hover {
+  color: crimson;
+}
+
+.modalbody {
+  padding: 1.5em;
+  text-align: center;
+}
+
+.modalimage {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  margin-bottom: 1em;
+}
+
+.modaldescription {
+  color: #555;
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Modal */
+@media (max-width: 768px) {
+  .modalcontent {
+    width: 95%;
+  }
+  .modalimage {
+    max-height: 200px;
+  }
 }

@@ -1,42 +1,30 @@
 import React from "react";
-import '../App.css';
+import "../App.css";
 
-const Modalwindow = function(props){
-    // finction to close the modal window
-    const closemodalwindow = ()=>{
-        let modalwindow = document.querySelector(".modalwindow")
-        modalwindow.style.display = "none";
-    }
-    
-    // collect comment
-    const collectcomment = ()=>{
-        const commentarea = document.querySelector(".commentarea").value
-        const testingpost = document.querySelector(".testingpost")
-        testingpost.innerHTML += `<li>${props.usercomment} - ${commentarea}</li>`
-    }
-    return(
+const Modalwindow = function ({ title, image, description, onClose }) {
+    return (
         <>
             {/* Modal window */}
             <section className="modalwindow">
                 <div className="modalcontent">
                     <header className="modalheader">
-                        <p>Add Feedback</p>
-                        <p className="closemodal" onClick={closemodalwindow}>&#x58;</p>
+                        <p>{title}</p> {/* Title dynamically passed */}
+                        <p className="closemodal" onClick={onClose}>
+                            &#x58; {/* Close button */}
+                        </p>
                     </header>
                     <main className="modalbody">
-                        <input placeholder="Type your comments..." className="commentarea" type="text"/>
-                        <p className="description_comment">Max 200 characters</p>
-                        <button className="btnpostfeedback" onClick={collectcomment}>Post Feedback</button>
+                        <img
+                            src={image}
+                            alt={title}
+                            className="modalimage"
+                        />
+                        <p className="modaldescription">{description}</p>
                     </main>
                 </div>
             </section>
-           
-           {/* TESTING POST */}
-           <ul className="testingpost">
-            
-           </ul>
         </>
-    )
-}
+    );
+};
 
-export default Modalwindow
+export default Modalwindow;
