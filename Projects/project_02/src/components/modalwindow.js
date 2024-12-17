@@ -14,7 +14,7 @@ const Modalwindow = function ({ title, image, description, onClose }) {
                 <main className="modalbody">
                     <img
                         src={image}
-                        alt={title}
+                        
                         className="modalimage"
                     />
                     <p className="modaldescription">{description}</p>

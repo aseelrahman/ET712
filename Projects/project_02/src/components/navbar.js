@@ -6,7 +6,7 @@ const Navbars = function(){
         <>
         <nav className="navbar">
             <div>
-                <p>Must-Visit USA</p>
+                <h1>Must-Visit USA</h1>
             </div>
             <div className="btngroup">
                 <button><Link to="/">Home</Link></button>
