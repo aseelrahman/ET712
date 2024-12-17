@@ -33,6 +33,10 @@ const Newyork = function(){
             {/* user 6 */}
             <Card username="The metropolitian Museum of Art"><User image={museum}   msg="The Met is one of the world’s largest and most prestigious art museums, featuring over 2 million works spanning thousands of years. From ancient artifacts to modern masterpieces, it’s a cultural treasure trove."/></Card>
         </section>
+
+        <footer className="footer">
+        <p>Created by Aseel Rahman @ 2024</p>
+      </footer>
         </>
     )
 }

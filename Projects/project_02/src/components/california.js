@@ -33,6 +33,9 @@ const Newyork = function(){
             {/* user 6 */}
             <Card username="San Diego Zoo"><User image={san_diego_zoo}   msg="Renowned as one of the best zoos in the world, the San Diego Zoo is home to thousands of animals from around the globe. With immersive exhibits and a commitment to conservation, it’s a fun and educational destination."/></Card>
         </section>
+        <footer className="footer">
+        <p>Created by Aseel Rahman @ 2024</p>
+      </footer>
         </>
     )
 }

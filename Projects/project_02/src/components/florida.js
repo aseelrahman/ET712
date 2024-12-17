@@ -33,6 +33,10 @@ const Newyork = function(){
             {/* user 6 */}
             <Card username="Kennedy Space Center"><User image={kennedyspace}   msg="Discover the history and future of space exploration at Kennedy Space Center. Located near Cape Canaveral, this fascinating destination lets visitors explore space shuttles, meet astronauts, and experience interactive exhibits."/></Card>
         </section>
+
+        <footer className="footer">
+        <p>Created by Aseel Rahman @ 2024</p>
+      </footer>
         </>
     )
 }

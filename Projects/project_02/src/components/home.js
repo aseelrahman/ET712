@@ -34,6 +34,10 @@ const Home = function(){
             <Card username="Florida"><User image={floridaimage}  date="10/16/24" msg="With its world-class theme parks, tropical beaches, and vibrant nightlife, Florida is the ultimate getaway for fun and sunshine."/></Card>
         </section>
 
+        <footer className="footer">
+        <p>Created by Aseel Rahman @ 2024</p>
+      </footer>
+
         </>
     )
 }
@@ -41,7 +45,10 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Home />
+    
   </React.StrictMode>
+  
+  
 );
 
 

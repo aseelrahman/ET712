@@ -36,6 +36,7 @@ const Card = function (props) {
                     onClose={closeModal}         // Close modal function
                 />
             )}
+            
         </>
     );
 };
