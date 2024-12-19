@@ -30,10 +30,10 @@ const Card = function (props) {
             {/* Render Modal Only if Open */}
             {isModalOpen && (
                 <Modalwindow
-                    title={props.username}       // Pass card's title
-                    image={props.image}          // Pass card's image URL
-                    description={props.children} // Pass card's description
-                    onClose={closeModal}         // Close modal function
+                    title={props.username}       
+                    image={props.image}          
+                    description={props.children} 
+                    onClose={closeModal}         
                 />
             )}
             
