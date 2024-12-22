@@ -6,12 +6,17 @@ import { Link } from 'react-router-dom';
 function Navbar({ cartItemCount }) {
   return (
     <nav className="navbar">
-      <Link to="/">Home</Link>
-      <Link to="/products">Products</Link>
-      {/* Cart count in the navbar */}
-      <Link to="/cart">
-        Cart ({cartItemCount})
-      </Link>
+      <div>
+        <p className='name'>FootForward</p>
+      </div>
+      <div>
+        <Link className='nav-link' to="/">Home</Link>
+        <Link className='nav-link' to="/products">Products</Link>
+        {/* Cart count in the navbar */}
+        <Link className='nav-link' to="/cart">
+          Cart ({cartItemCount})
+        </Link>
+      </div>
     </nav>
   );
 }
