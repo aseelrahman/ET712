@@ -1,0 +1,125 @@
+/* ProductCard Styles */
+.cart-btn{
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+    width: 80%;
+}
+.cart-btn:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+.p-img{
+    transition: transform 0.3s ease;
+}
+.p-img:hover{
+    transform: scale(1.05);
+}
+/* .product-card img{
+    border: 5px solid var(--primary-color);
+    border-radius: 6px;
+} */
+.quantity-section input{
+    box-sizing: border-box;
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+    width: 80%;
+    height: 30px;
+    text-align: center;
+}
+
+/* ProductModal Styles */
+.modal-backdrop{
+    background: linear-gradient(
+        to bottom,
+        rgba(255,0,0,0.1),
+        rgba(255,0,0,0)
+    );
+
+}
+.close-btn{
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    border-radius: 3px;
+    transition: transform 0.3s ease;
+}
+.close-btn:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+.p-price{
+    color: var(--primary-color);
+    font-weight: bold;
+}
+.modal-contetn label{
+    width: 80%;
+}
+.quantity{
+    color: var(--primary-color);
+    font-weight: bold;
+    width: 40%;
+    padding: 10px;
+}
+.modal-content input{
+    box-sizing: border-box;
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+    width: 60%;
+    height: 30px;
+    text-align: center;
+}
+
+/* Cart styles */
+table{
+    text-align: center;
+}
+table th{
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--primary-color);
+}
+
+table tfoot th{
+    border: none;
+}
+.p-title{
+    text-align: start;
+   
+}
+.cart-quantity{
+    box-sizing: border-box;
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: var(--primary-color);
+    color: white;
+}
+.cart-close-btn{
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    transition: transform 0.3s ease;
+    padding: 10px;
+    margin: 10px;
+}
+.cart-close-btn:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+/* Cart-Summary styles */
+.cart-summary{
+    text-align: end;
+    margin: 20px;
+}

@@ -1,5 +1,6 @@
 // components/ProductModal.js
 import React from 'react';
+import './components.css'
 
 function ProductModal({ product, quantity, setQuantity, onClose, addToCart }) {
   const handleAddToCart = () => {
@@ -15,9 +16,11 @@ function ProductModal({ product, quantity, setQuantity, onClose, addToCart }) {
         <h2>{product.title}</h2>
         <img src={product.image} alt={product.title} />
         <p>{product.description}</p>
-        <p>Price: ${product.price.toFixed(2)}</p>
+        <p><span className='p-price'>Price:</span> ${product.price.toFixed(2)}</p>
         <label>
+          <span className='quantity'>
           Quantity:
+          </span>
           <input
             type="number"
             min="1"
@@ -25,7 +28,8 @@ function ProductModal({ product, quantity, setQuantity, onClose, addToCart }) {
             onChange={(e) => setQuantity(parseInt(e.target.value) || 1)}
           />
         </label>
-        <button onClick={handleAddToCart}>Add to Cart</button>
+        <br/>
+        <button className='cart-btn' onClick={handleAddToCart}>Add to Cart</button>
       </div>
     </div>
   );

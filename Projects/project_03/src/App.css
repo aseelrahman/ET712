@@ -1,6 +1,5 @@
 :root {
-  --primary-color: #3498db; /* Example: a blue tone */
-  --secondary-color: #2ecc71; /* Example: a green tone */
+  --primary-color: #c92c2c; /* Example: a blue tone */
 }
 
 body {
@@ -22,7 +21,7 @@ body {
 
 .product-card {
   background: #fff;
-  border: 1px solid #ccc;
+  border: 4px dashed var(--primary-color);
   border-radius: 6px;
   padding: 1rem;
   text-align: center;

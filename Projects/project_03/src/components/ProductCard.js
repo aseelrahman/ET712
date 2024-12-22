@@ -1,6 +1,7 @@
 // components/ProductCard.js
 import React, { useState } from 'react';
 import ProductModal from './ProductModal';
+import './components.css'
 
 function ProductCard({ product, addToCart }) {
   const [quantity, setQuantity] = useState(1);
@@ -13,7 +14,7 @@ function ProductCard({ product, addToCart }) {
 
   return (
     <div className="product-card">
-      <img 
+      <img className='p-img'
         src={product.image}
         alt={product.title}
         onClick={() => setIsModalOpen(true)}
@@ -27,7 +28,7 @@ function ProductCard({ product, addToCart }) {
           value={quantity}
           onChange={(e) => setQuantity(parseInt(e.target.value) || 1)}
         />
-        <button onClick={handleAddToCart}>Add to Cart</button>
+        <button className='cart-btn' onClick={handleAddToCart}>Add to Cart</button>
       </div>
 
       {isModalOpen && (

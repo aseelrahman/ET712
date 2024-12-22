@@ -1,5 +1,6 @@
 // components/Cart.js
 import React, { useMemo } from 'react';
+import './components.css'
 
 function Cart({ cartItems, setCartItems }) {
   // Calculate subtotal
@@ -44,9 +45,10 @@ function Cart({ cartItems, setCartItems }) {
           <tbody>
             {cartItems.map(item => (
               <tr key={item.id}>
-                <td>{item.title}</td>
+                <td className='p-title'>{item.title}</td>
                 <td>
                   <input
+                  className='cart-quantity'
                     type="number"
                     min="1"
                     value={item.quantity}
@@ -58,19 +60,30 @@ function Cart({ cartItems, setCartItems }) {
                 <td>${item.price.toFixed(2)}</td>
                 <td>${(item.price * item.quantity).toFixed(2)}</td>
                 <td>
-                  <button onClick={() => removeItem(item.id)}>X</button>
+                  <button className='cart-close-btn' onClick={() => removeItem(item.id)}>X</button>
                 </td>
               </tr>
             ))}
           </tbody>
+          <tfoot>
+          <tr>
+              <th></th>
+              <th></th>
+              <th>Subtotal</th>
+              <th>NY Sales Tax (8.16%)</th>
+              <th>Total</th>
+            </tr>
+            <tr>
+            <td></td>
+              <td></td>
+              <td>${subtotal.toFixed(2)}</td>
+              <td>${taxAmount.toFixed(2)}</td>
+              <td>${total.toFixed(2)}</td>
+            </tr>
+          </tfoot>
+         
         </table>
       )}
-
-      <div className="cart-summary">
-        <p>Subtotal: ${subtotal.toFixed(2)}</p>
-        <p>NY Sales Tax (8.16%): ${taxAmount.toFixed(2)}</p>
-        <p>Total: ${total.toFixed(2)}</p>
-      </div>
     </div>
   );
 }
