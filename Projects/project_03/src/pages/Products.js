@@ -1,6 +1,7 @@
 // pages/Products.js
 import React from 'react';
 import ProductCard from '../components/ProductCard';
+import '../App.css'
 
 function Products({ products, addToCart }) {
   return (

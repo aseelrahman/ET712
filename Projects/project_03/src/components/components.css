@@ -32,49 +32,7 @@
     text-align: center;
 }
 
-/* ProductModal Styles */
-.modal-backdrop{
-    background: linear-gradient(
-        to bottom,
-        rgba(255,0,0,0.1),
-        rgba(255,0,0,0)
-    );
 
-}
-.close-btn{
-    background-color: var(--primary-color);
-    color: white;
-    padding: 10px;
-    margin: 10px;
-    border: none;
-    border-radius: 3px;
-    transition: transform 0.3s ease;
-}
-.close-btn:hover{
-    cursor: pointer;
-    transform: scale(1.05);
-}
-.p-price{
-    color: var(--primary-color);
-    font-weight: bold;
-}
-.modal-contetn label{
-    width: 80%;
-}
-.quantity{
-    color: var(--primary-color);
-    font-weight: bold;
-    width: 40%;
-    padding: 10px;
-}
-.modal-content input{
-    box-sizing: border-box;
-    border: 2px solid var(--primary-color);
-    border-radius: 5px;
-    width: 60%;
-    height: 30px;
-    text-align: center;
-}
 
 /* Cart styles */
 .cart-page{

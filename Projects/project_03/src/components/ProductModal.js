@@ -1,6 +1,7 @@
 // components/ProductModal.js
 import React from 'react';
 import './components.css'
+import '../App.css'
 
 function ProductModal({ product, quantity, setQuantity, onClose, addToCart }) {
   const handleAddToCart = () => {

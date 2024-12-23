@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import ProductModal from './ProductModal';
 import './components.css'
+import '../App.css'
 
 function ProductCard({ product, addToCart }) {
   const [quantity, setQuantity] = useState(1);
