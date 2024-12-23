@@ -1,6 +1,5 @@
 // components/Cart.js
 import React, { useMemo } from 'react';
-import './components.css'
 import '../App.css'
 
 function Cart({ cartItems, setCartItems }) {

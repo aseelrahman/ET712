@@ -263,24 +263,65 @@ body {
 }
 
 /* Cart table */
+.cart-page{
+  min-height: 100vh;
+}
+.cart-page h1{
+  text-align: center;
+  color: var(--primary-color);
+font-family: "Wallpoet", serif;
+}
 table {
   width: 100%;
   border-collapse: collapse;
+  text-align: center;
+}
+table th{
+  font-weight: bold;
+  font-size: 20px;
+  color: var(--primary-color);
+}
+
+table tfoot th{
+  border: none;
 }
 
 th, td {
   padding: 0.5rem;
   border-bottom: 1px solid #ccc;
 }
-
-/* Home.css */
-
-/* 
-  1. Make the container fill the viewport
-  2. Position and size background images
-  3. Use an animation to cycle through images
-*/
-
+.p-title{
+  text-align: start;
+ 
+}
+.cart-quantity{
+  box-sizing: border-box;
+  border: 2px solid var(--primary-color);
+  border-radius: 5px;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  font-size: 16px;
+  background-color: var(--primary-color);
+  color: white;
+}
+.cart-close-btn{
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 3px;
+  transition: transform 0.3s ease;
+  padding: 10px;
+  margin: 10px;
+}
+.cart-close-btn:hover{
+  cursor: pointer;
+  transform: scale(1.05);
+}
+.cart-summary{
+  text-align: end;
+  margin: 20px;
+}
 
 /* Product.js Styles */
 .products-container{
@@ -290,7 +331,36 @@ th, td {
 .products-container h1, p{
   text-align: center;
 }
-
+/* ProductCard.js Styles */
+.cart-btn{
+  background-color: var(--primary-color);
+  color: white;
+  padding: 10px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+  width: 80%;
+}
+.cart-btn:hover{
+  cursor: pointer;
+  transform: scale(1.05);
+}
+.p-img{
+  transition: transform 0.3s ease;
+}
+.p-img:hover{
+  transform: scale(1.05);
+}
+.quantity-section input{
+  box-sizing: border-box;
+  border: 2px solid var(--primary-color);
+  border-radius: 5px;
+  width: 80%;
+  height: 30px;
+  text-align: center;
+}
+/* Footer.js styles */
 footer{
   position: absolute;
   background-color:  var(--primary-color);
