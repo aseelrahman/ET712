@@ -17,6 +17,9 @@ import p6 from './images/p6.png'
 import p7 from './images/p7.png'
 import p8 from './images/p8.png'
 import p9 from './images/p9.png'
+import p10 from './images/p10.png'
+import p11 from './images/p11.png'
+import p12 from './images/p12.png'
 
 // Sample product data (you might fetch from an API in a real project)
 const initialProducts = [
@@ -84,7 +87,27 @@ const initialProducts = [
     description: 'Carve a new lane for yourself in the Zoom Vomero 5—your go-to for complexity, depth and easy styling. The richly layered design includes textiles, leather and plastic accents that come together to make one of the coolest sneakers of the season.',
     price: 160,
   },
-  // ... Add more products here
+  {
+    id: 10,
+    title: 'Nike P-6000',
+    image: p10,
+    description: "The Nike P-6000 draws on the 2006 Nike Air Pegasus, bringing you a mash-up of iconic style that's breathable, comfortable and evocative of that early-2000s vibe.",
+    price: 110,
+  },
+  {
+    id: 11,
+    title: 'Book 1 "Christmas"',
+    image: p11,
+    description: 'Devin Booker is a craftsman who can lose a defender with an ankle-snatching stutter-go, then come back with a series of spellbinding jabs into a splashed jumper. Book’s signature shoe gives him the tools he needs to carve. With leather accents highlighting a supersmooth upper and a speedy, yet cushioned ride, this design can help you explore the spaces created by your piercing footwork and hungry hooper soul.',
+    price: 140,
+  },
+  {
+    id: 12,
+    title: 'Nike Air Max 90',
+    image: p12,
+    description: 'Lace up and feel the legacy. Produced at the intersection of art, music and culture, this champion running shoe helped define the 90s. Worn by presidents, revolutionized through collabs and celebrated through rare colorways, its striking visuals, Waffle outsole, and exposed Air cushioning keep it alive and well.',
+    price: 130,
+  }
 ];
 
 function App() {
