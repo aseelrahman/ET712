@@ -1,4 +1,3 @@
-// App.js
 import React, { useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Layout/Navbar';
@@ -22,9 +21,7 @@ import p10 from './images/p10.png'
 import p11 from './images/p11.png'
 import p12 from './images/p12.png'
 
-// Sample product data (you might fetch from an API in a real project)
 const initialProducts = [
-  // At least 9 sample products
   {
     id: 1,
     title: 'Air Jordan 5 Retro "White and Black"',

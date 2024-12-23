@@ -1,4 +1,3 @@
-// pages/NotFound.js
 import React from 'react';
 import '../App.css'
 

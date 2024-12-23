@@ -1,4 +1,3 @@
-// components/Cart.js
 import React, { useMemo } from 'react';
 import '../App.css'
 

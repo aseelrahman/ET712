@@ -1,4 +1,3 @@
-// components/ProductCard.js
 import React, { useState } from 'react';
 import ProductModal from './ProductModal';
 import '../App.css'
