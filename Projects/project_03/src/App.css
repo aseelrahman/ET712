@@ -34,8 +34,10 @@ body {
   color: var(--primary-color);
   background-color: white;
 }
+
+/* Projuct.js styles */
 .products-container {
-  padding: 1rem;
+  min-height: 100vh;
 }
 
 .product-card {
@@ -111,7 +113,7 @@ th, td {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  animation: slideshow 30s infinite; /* 15-second cycle, infinite loop */
+  animation: slideshow 25s infinite; /* 15-second cycle, infinite loop */
   display: flex;
   align-items: center;
   justify-content: center; /* to center overlay if we want */

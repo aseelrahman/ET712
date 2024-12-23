@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import Products from './pages/Products';
 import Cart from './components/Cart';
 import NotFound from './pages/NotFound';
+import Footer from './components/Layout/Footer.js'
 
 // Product Images
 import p1 from './images/p1.png'
@@ -151,6 +152,7 @@ function App() {
         />
         <Route path="*" element={<NotFound />} />
       </Routes>
+      <Footer />
     </div>
   );
 }

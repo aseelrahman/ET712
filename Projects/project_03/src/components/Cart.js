@@ -28,7 +28,7 @@ function Cart({ cartItems, setCartItems }) {
 
   return (
     <div className="cart-page">
-      <h1>Your Shopping Cart</h1>
+      <h1>Let's Checkout</h1>
       {cartItems.length === 0 ? (
         <p>Your cart is empty.</p>
       ) : (
@@ -85,6 +85,7 @@ function Cart({ cartItems, setCartItems }) {
         </table>
       )}
     </div>
+    
   );
 }
 

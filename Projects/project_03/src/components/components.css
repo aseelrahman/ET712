@@ -77,6 +77,15 @@
 }
 
 /* Cart styles */
+.cart-page{
+    min-height: 100vh;
+}
+.cart-page h1{
+    text-align: center;
+    color: var(--primary-color);
+  font-family: "Wallpoet", serif;
+}
+
 table{
     text-align: center;
 }
