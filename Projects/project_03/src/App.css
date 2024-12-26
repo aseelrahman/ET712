@@ -103,7 +103,7 @@ body {
         rgba(0, 0, 0, 0.0) 40%,
         rgba(0, 0, 0, 0.8) 100%
       ),
-      url('images/s6.jpg') center/cover no-repeat;
+      url('images/s9.jpg') center/cover no-repeat;
   }
   75% {
     background:
@@ -130,7 +130,7 @@ body {
         rgba(0, 0, 0, 0.0) 40%,
         rgba(0, 0, 0, 0.8) 100%
       ),
-      url('images/s9.jpg') center/cover no-repeat;
+      url('images/s6.jpg') center/cover no-repeat;
   }
 }
 
